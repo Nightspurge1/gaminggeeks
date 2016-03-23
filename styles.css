@@ -1,0 +1,249 @@
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.header { 
+    font-family: Gabriela, Georgia, sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px #1d2730;
+    font-size: 3em;
+    line-height: 350%;
+    margin: 0;
+    padding: 10px;
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5;
+    background-color: #e0e3e6;
+    color: #535353;
+}
+
+.backheader { 
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position:top;
+    background-color: #173042;
+}
+
+nav {
+    float: left;
+    width: 200px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav a {
+    padding: 15px;
+    display: block;
+    color: #173042; 
+    text-decoration: none;
+}  
+
+nav a:link { 
+    color: #173042; 
+} 
+
+nav a:hover {
+    color: #0E748C;  
+}
+
+nav a:active { 
+    color: #236477;
+}
+
+main {
+    overflow: auto;
+    padding: 10px;
+    display: block;
+    margin-left: 200px;
+    background-color: #ffffff;
+}
+
+h1 { 
+    font-family: Gabriela, Georgia, sans-serif;
+    margin: 0;
+    padding-left: 10px;
+    color: #236477;
+    text-align: left;
+}
+
+h4 {
+    font-family: Gabriela, Georgia, sans-serif;
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Maven Pro', Georgia, sans-serif;
+    margin: 20px 0 0 10px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0 10px;
+}
+
+p {
+    margin: 0;
+    padding: 20px 10px 0 10px;
+}
+
+section{
+    padding-top: 15px;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.members {
+    border-top: 1px solid #535353;
+    padding: 30px 0;
+}
+
+/*
+.specialp {
+    margin: 0;
+    padding: 10px;
+}
+*/
+
+img {
+    padding: 0 10px;
+}
+
+/*
+.floatright {
+    float: right;
+    margin: 10px 0 10px 10px;
+}
+*/
+
+/*
+.floatleft { 
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+*/
+
+
+/*
+td {
+    text-align: center;
+}
+*/
+
+/*
+.contactbox {
+    padding: 15px;
+    overflow: auto;
+}
+*/
+
+/*
+.featlabel {
+    float: left; 
+    width: 60px; 
+    clear: left; 
+    padding-right: 10px;
+}
+*/
+
+/*
+.height {
+    padding: 0;
+    margin-top: 10px;
+}
+*/
+
+/*
+.box {
+   width: 400px;
+   font-size: 14px;
+}
+*/
+
+/*
+.breakline {
+    display: block;
+}
+*/
+
+/*
+.subtitlecontact {
+    font-family: 'Maven Pro', Georgia, sans-serif;
+    display: block;
+    font-size: 1.2em;  
+    padding-bottom: 10px;
+}
+*/
+
+/*
+.listplaces {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 170%;
+}
+*/
+
+/*
+.paddingdiv {
+    padding: 10px 0;
+}
+*/
+
+
+
+footer {
+    background-color: #173042;
+    height: 50px;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 0.875em;
+    text-align: left;
+    padding:5px;
+}
+
+footer a {
+    text-align: left;
+    padding: 5px;
+    display: block;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
