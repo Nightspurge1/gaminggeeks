@@ -2,13 +2,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="skeleton.css">
-    <link rel="stylesheet" href="mobile.css" media="screen and (min-width: 350px)">
     <title>Comp 1950 - Home</title>
     <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
 	<script>
 		$(document).ready(function(){
 			$("#hamburger").click(function(){
-				$("nav").toggle(1000);
+				$("nav ul").toggle(1000);
 			});
 		});
 	
@@ -21,9 +20,9 @@
         </header>
     </div><!-- /.row Header -->
     
-    <div class="row">
-        <div id="hamburger"><img src="images/menu.png" alt="menu" id="menu"></div>
+    <div class="row">  
         <nav class="twelve columns">
+            <div id="hamburger"><img src="images/menu.png" alt="menu" id="menu"></div>
 	       <ul>
 		      <li><a href="index.html">Home</a></li>
 		      <li><a href="blank">About</a></li>
@@ -31,13 +30,25 @@
 		      <li><a href="blank">Student Page</a></li>
 		      <li><a href="lectures">Lectures</a></li>
 		      <li><a href="blank">Project</a></li>
-		      <li><a href="http://thenetnews.tumblr.com/">News</p></li>
+		      <li><a href="http://thenetnews.tumblr.com/">News</a></li>
 	       </ul>
         <nav>
     </div><!-- /.row Nav -->
             
 <div class="row">
-<main>
+<main class="twelve columns">
+    <h2>Welcome to the Winter 2016 term!</h2>
+    <p>01 Jan 2016</p>
+    <p>
+        It's January 2016, and HTML/CSS/JS are the front-end stack that makes up all web development. Current versions of each are generally well accepted, Mobile makes up around half of all web browsing, Microsoft has made a half decent browser and front-end web development is a solid job on it's own!
+    </p>
+    <p>    
+        In COMP 1950, we're going to take a look at that front-end stack, how you can make those three technologies work together to make great things.
+    </p>
+        During the first half of the course, we will take a hard look at HTML and CSS and where we are now as web developers. We will move on to template development (the primary task in web development these days) and mix in some JS later on.
+    <p>
+        This page will contain news or updates from time to time, so stay tuned!
+    </p>
 </main>
 </div><!-- /.row Main -->
             
