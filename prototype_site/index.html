@@ -1,31 +1,46 @@
 <DOCOTYPE! html>
 <html>
 <head>
-<link rel="stylesheet" href="skeleton.css">
-<link rel="stylesheet" href="mobile.css" media="screen and (min-width: 350px)">
-<title>Comp 1950 - Home</title>
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (min-width: 350px)">
+    <title>Comp 1950 - Home</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#hamburger").click(function(){
+				$("nav").toggle(1000);
+			});
+		});
+	
+	</script>
 </head>
 <body>
-<div class="row">
-<header class="twelve columns"></header>
-</div><!-- /.row Header -->
-<div class="row">
-<nav>
-	<ul>
-		<li>Home</li>
-		<li>About</li>
-		<li>Outline</li>
-		<li>Student Page</li>
-		<li>Lectures</li>
-		<li>Project</li>
-		<li>News</li>
-	</ul>
-<nav>
-</div><!-- /.row Nav -->
+    <div class="row">
+        <header class="twelve columns">
+            <h1>Comp1950</h1><p>Web Development Level 2</p>
+        </header>
+    </div><!-- /.row Header -->
+    
+    <div class="row">
+        <div id="hamburger"><img src="images/menu.png" alt="menu" id="menu"></div>
+        <nav class="twelve columns">
+	       <ul>
+		      <li><a href="index.html">Home</a></li>
+		      <li><a href="blank">About</a></li>
+		      <li><a href="blank">Outline</a></li>
+		      <li><a href="blank">Student Page</a></li>
+		      <li><a href="lectures">Lectures</a></li>
+		      <li><a href="blank">Project</a></li>
+		      <li><a href="http://thenetnews.tumblr.com/">News</p></li>
+	       </ul>
+        <nav>
+    </div><!-- /.row Nav -->
+            
 <div class="row">
 <main>
 </main>
 </div><!-- /.row Main -->
+            
 <div class="row">
 <footer class="twelve columns"> 
 	<ul>
