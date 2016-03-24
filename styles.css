@@ -116,98 +116,13 @@ section{
     padding: 30px 0;
 }
 
-/*
-.specialp {
-    margin: 0;
-    padding: 10px;
+.sitemappadding {
+	padding: 20px;
 }
-*/
 
 img {
     padding: 0 10px;
 }
-
-/*
-.floatright {
-    float: right;
-    margin: 10px 0 10px 10px;
-}
-*/
-
-/*
-.floatleft { 
-    float: left;
-    margin: 10px 10px 10px 0;
-}
-*/
-
-
-/*
-td {
-    text-align: center;
-}
-*/
-
-/*
-.contactbox {
-    padding: 15px;
-    overflow: auto;
-}
-*/
-
-/*
-.featlabel {
-    float: left; 
-    width: 60px; 
-    clear: left; 
-    padding-right: 10px;
-}
-*/
-
-/*
-.height {
-    padding: 0;
-    margin-top: 10px;
-}
-*/
-
-/*
-.box {
-   width: 400px;
-   font-size: 14px;
-}
-*/
-
-/*
-.breakline {
-    display: block;
-}
-*/
-
-/*
-.subtitlecontact {
-    font-family: 'Maven Pro', Georgia, sans-serif;
-    display: block;
-    font-size: 1.2em;  
-    padding-bottom: 10px;
-}
-*/
-
-/*
-.listplaces {
-    text-align: justify;
-    text-indent: 20px;
-    line-height: 170%;
-}
-*/
-
-/*
-.paddingdiv {
-    padding: 10px 0;
-}
-*/
-
-
 
 footer {
     background-color: #173042;
