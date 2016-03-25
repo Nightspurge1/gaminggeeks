@@ -1,0 +1,80 @@
+<DOCOTYPE! html>
+<html>
+<head>
+    <link rel="stylesheet" href="skeleton.css">
+    <title>Comp 1950 - Home</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#hamburger").click(function(){
+				$("nav ul").toggle(1000);
+			});
+            $(".lecture").click(function(){
+                $("#lecture_1").toggle(1000);
+            });
+		});
+	
+	</script>
+</head>
+<body>
+    <div class="row">
+        <header class="twelve columns">
+            <h1>Comp1950</h1><p>Web Development Level 2</p>
+        </header>
+    </div><!-- /.row Header -->
+    
+    <div class="row">  
+        <nav class="twelve columns">
+            <div id="hamburger"><img src="images/menu.png" alt="menu" id="menu"></div>
+	       <ul>
+		      <li><a href="index.html">Home</a></li>
+		      <li><a href="blank">About</a></li>
+		      <li><a href="blank">Outline</a></li>
+		      <li><a href="blank">Student Page</a></li>
+		      <li><a href="lectures">Lectures</a></li>
+		      <li><a href="blank">Project</a></li>
+		      <li><a href="http://thenetnews.tumblr.com/">News</a></li>
+	       </ul>
+        <nav>
+    </div><!-- /.row Nav -->
+            
+<div class="row">
+<main class="twelve columns">
+    <h2 class="lecture">Lecture 1</h2>
+    <div id="lecture_1">
+    <p>Week 1: Getting started, introductions, standards, tools</p>
+    <h3>Agenda</h3>
+    <ul>
+        <li>Orientation</li>
+        <li>Introductions</li>
+        <li>Standards</li>
+        <li>Tools</li>
+        <li>Student Pages setup</li>
+        <li>Homework</li>
+    </ul>
+    <h3>Orientation</h3>
+    <p>Learn about the course to help you determine if this is the right class for you. Take a look at the course outline</p>
+    <h4>Outline</h4>
+    <p>A week-by-week breakdown of what we will learn, homework and other deliverables</p>
+    <h4>Student Pages</h4>
+    <p>Each student will get personal webspace. This is not a continuation of your COMP1850 site (if you had one). This site is primarily for you to house your exercises, assignments, group work and more. Make it a site that is usable and functional.</p>
+
+    <p>Each student will be assigned web space for their homework and other files. All work performed on lab computers should be saved to personal files.</p>
+
+    <p>Your instructor will create webspaces for each student at the end of the first lecture. Please be present for this, as you will be entering your own password.</p>
+
+    <p>More information on Student Pages.</p>
+    </div><!-- /#lecture_1 -->
+</main>
+</div><!-- /.row Main -->
+            
+<div class="row">
+<footer class="twelve columns"> 
+	<ul>
+		<li><a href="sitemap.html">Sitemap</a></li>
+		<li><a href="bcit.ca">BCIT</a></li>
+	</ul>
+</footer>
+</div><!-- /.row Footer --> 
+</body>
+</html>
