@@ -27,14 +27,11 @@ body {
 
 .backheader { 
     height: 200px;
-    background-repeat: no-repeat;
-    background-position:top;
     background-color: #173042;
 }
 
 nav {
     float: left;
-    width: 200px;
     font-weight: 400;
     letter-spacing: 0.1em;
 }
@@ -56,12 +53,8 @@ nav a:link {
     color: #173042; 
 } 
 
-nav a:hover {
+nav a:hover, nav a:active {
     color: #0E748C;  
-}
-
-nav a:active { 
-    color: #236477;
 }
 
 main {
@@ -116,12 +109,34 @@ section{
     padding: 30px 0;
 }
 
-.sitemappadding {
-	padding: 20px;
+.sitemapstyle h3 {
+    padding: 15px 10px 0;
+}
+
+.sitemapstyle h3 a {
+    text-decoration: none;
+    color: #535353;
+}
+
+.sitemapstyle h3 a:hover, .sitemapstyle h3 a:active {
+    color: #0E748C;  
+}
+
+.sitemapstyle ul {
+    padding: 0 30px;
+}
+
+.boxstyles {
+    padding: 20px 0;
+}
+
+.boxstyles p {
+    padding: 0 0 0 10px;
 }
 
 img {
     padding: 0 10px;
+    max-width: 100%;
 }
 
 footer {
