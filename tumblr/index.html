@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{Title}</title>
+       
+        <meta name="font: Main Font" description: "body font">
+        <meta name="font: Nav Font" description: "nav font">
+        <meta name="font: Footer Font" description: "footer font">
+        <meta name="color: Background" description: "background color for body">
+        <meta name="color: Body Color" description: "color for body">
+        <meta name="color: h1 Color" description: "color for h1">
+        <meta name="color: h2 Color" description: "color for h2">
+        <meta name="color: h3 Color" description: "color for h3">
+        <meta name="color: h4 Color" description: "color for h4">
+        
+        <meta name="text:Twitter Handle" description=""/>
+        <meta name="if: Show Twitter" description="0">
+        <meta name="text:Instagram Handle" description=""/>
+        <meta name="if: Show Instagram" description="0">
+        <meta name="text:Youtube Handle" description=""/>
+        <meta name="if:Show Youtube" description"0"/>
+        <meta name="text:Facebook Handle" description=""/>
+        <meta name="if:Show Facebook" description"0"/>
+        
+        <!--<link rel="stylesheet" href="http://static.tumblr.com/mgnlaqt/3MDo38rby/styles.css" media="all">-->
+        
+        <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#hamburger").click(function(){
+			         $(".hamburgernav").toggle(1000);
+			     });
+            });
+        </script>
+        <style>
+        
+        
+        /* 
+            html5doctor.com Reset Stylesheet
+            v1.6.1
+            Last Updated: 2010-09-17
+            Author: Richard Clark - http://richclarkdesign.com 
+            Twitter: @rich_clark
+            */
+
+            html, body, div, span, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            abbr, address, cite, code,
+            del, dfn, em, img, ins, kbd, q, samp,
+            small, strong, sub, sup, var,
+            b, i,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section, summary,
+            time, mark, audio, video {
+                margin:0;
+                padding:0;
+                border:0;
+                outline:0;
+                font-size:100%;
+                vertical-align:baseline;
+                background:transparent;
+            }
+
+            body {
+                line-height:1;
+            }
+
+            article,aside,details,figcaption,figure,
+            footer,header,hgroup,menu,nav,section { 
+                display:block;
+            }
+
+            nav ul {
+                list-style:none;
+            }
+
+            blockquote, q {
+                quotes:none;
+            }
+
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content:'';
+                content:none;
+            }
+
+            a {
+                margin:0;
+                padding:0;
+                font-size:100%;
+                vertical-align:baseline;
+                background:transparent;
+            }
+
+            /* change colours to suit your needs */
+            ins {
+                background-color:#ff9;
+                color:#000;
+                text-decoration:none;
+            }
+
+            /* change colours to suit your needs */
+            mark {
+                background-color:#ff9;
+                color:#000; 
+                font-style:italic;
+                font-weight:bold;
+            }
+
+            del {
+                text-decoration: line-through;
+            }
+
+            abbr[title], dfn[title] {
+                border-bottom:1px dotted;
+                cursor:help;
+            }
+
+            table {
+                border-collapse:collapse;
+                border-spacing:0;
+            }
+
+            /* change border colour to suit your needs */
+            hr {
+                display:block;
+                height:1px;
+                border:0;   
+                border-top:1px solid #cccccc;
+                margin:1em 0;
+                padding:0;
+            }
+
+            input, select {
+                vertical-align:middle;
+            }
+            
+            
+
+     /*
+            * 
+            * Basic Grid for COMP 1950
+            * By Alistair Calder
+            * 
+            * Adapted from Skeleton V2.0.4
+            * Copyright 2014, Dave Gamache
+            * www.getskeleton.com
+            * 
+            */
+
+
+
+            /* Grid - Starts with Mobile-First */
+            .container {
+              position: relative;
+              width: 100%;
+              max-width: 960px;
+              margin: 0 auto;
+              padding: 20px;
+              box-sizing: border-box; }
+
+            .column,
+            .columns {
+              width: 100%;
+              float: left;
+              box-sizing: border-box; }
+
+            /* For devices larger than 400px */
+            @media (min-width: 400px) {
+              .container {
+                width: 85%;
+                padding: 0; }
+            }
+
+            /* For devices larger than 550px */
+            @media (min-width: 550px) {
+              .container {
+                width: 80%; }
+              .column,
+              .columns {
+                margin-left: 4%; }
+              .column:first-child,
+              .columns:first-child {
+                margin-left: 0; }
+
+              .one.column,
+              .one.columns                    { width: 4.66666666667%; }
+              .two.columns                    { width: 13.3333333333%; }
+              .three.columns                  { width: 22%;            }
+              .four.columns                   { width: 30.6666666667%; }
+              .five.columns                   { width: 39.3333333333%; }
+              .six.columns                    { width: 48%;            }
+              .seven.columns                  { width: 56.6666666667%; }
+              .eight.columns                  { width: 65.3333333333%; }
+              .nine.columns                   { width: 74.0%;          }
+              .ten.columns                    { width: 82.6666666667%; }
+              .eleven.columns                 { width: 91.3333333333%; }
+              .twelve.columns                 { width: 100%; margin-left: 0; }
+
+              .one-third.column               { width: 30.6666666667%; }
+              .two-thirds.column              { width: 65.3333333333%; }
+
+              .one-half.column                { width: 48%; }
+
+            }
+
+            /* Base Styles  */
+            /* NOTE
+            html is set to 62.5% so that all the REM measurements 
+            are based on 10px sizing. So basically 1.5rem = 15px :) */
+            /*
+            html {
+              font-size: 62.5%; }
+            */
+            /*
+            body {
+              font-size: 1.5em;  currently ems cause chrome bug misinterpreting rems on body element 
+              line-height: 1.6;
+              font-weight: 400;
+              font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+              color: #222; }
+            */
+
+            p {
+              margin-top: 0; }
+
+
+
+            /* Lists  */
+            ul {
+              list-style: circle inside; }
+            ol {
+              list-style: decimal inside; }
+            ol, ul {
+              padding-left: 0;
+              margin-top: 0; }
+            ul ul,
+            ul ol,
+            ol ol,
+            ol ul {
+              margin: 1.5rem 0 1.5rem 3rem;
+              font-size: 90%; }
+            /*
+            li {
+              margin-bottom: 1rem; }
+            */
+
+
+
+            /* Tables  */
+            th,
+            td {
+              padding: 12px 15px;
+              text-align: left;
+              border-bottom: 1px solid #E1E1E1; }
+            th:first-child,
+            td:first-child {
+              padding-left: 0; }
+            th:last-child,
+            td:last-child {
+              padding-right: 0; }
+
+
+
+
+            /* Utilities  */
+            .u-full-width {
+              width: 100%;
+              box-sizing: border-box; }
+            .u-max-full-width {
+              max-width: 100%;
+              box-sizing: border-box; }
+            .u-pull-right {
+              float: right; }
+            .u-pull-left {
+              float: left; }
+
+
+            /* Clearing  */
+
+            /* Self Clearing Goodness */
+            .container:after,
+            .row:after,
+            .u-cf {
+              content: "";
+              display: table;
+              clear: both; }
+
+
+            /* Media Queries  */
+            /*
+            Note: The best way to structure the use of media queries is to create the queries
+            near the relevant code. For example, if you wanted to change the styles for buttons
+            on small devices, paste the mobile query code up in the buttons section and style it
+            there.
+            */
+
+
+            /* Larger than mobile */
+            @media (min-width: 400px) {}
+
+            /* Larger than phablet (also point when grid becomes active) */
+            @media (min-width: 550px) {}
+
+            /* Larger than tablet */
+            @media (min-width: 750px) {}
+
+            /* Larger than desktop */
+            @media (min-width: 1000px) {}
+
+            /* Larger than Desktop HD */
+            @media (min-width: 1200px) {}
+
+            .wrapper {
+                widht:90%;
+                max-width: 960px;
+                margin: 0 auto;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                font-size:16px;
+                padding: 20px;
+                color: #000;
+                font-family: {font: Main Font};
+                background-color: {color: Background};
+                color: {color: Body Color};
+            }
+            
+            h1 {
+                font-size: 32px;
+                padding: 40px 0;
+                line-height:1.4;
+                border-bottom: 2px solid #000;
+                color: #0a6f7a;
+                color: {color: h1 Color};
+            }
+            
+            h2 {
+                font-size: 20px;
+                padding: 20px 0;
+                line-height: 1.4;
+                color: #0a6f7a;
+                color: {color: h2 Color};
+            }
+        
+            h3 {
+                font-size: 18px;
+                padding: 40px 0 10px;
+                color: #0a6f7a;
+                line-height: 1.3;
+                color: {color: h3 Color};
+            }
+            
+            h4 {
+                font-size: 17px;
+                padding: 10px 0;
+                line-height: 1.3;
+                padding: 15px 0;
+                color: #0a6f7a;
+                color: {color: h4 Color};
+            }
+        
+            p {
+                font-size: 17px;
+                line-height: 1.5;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            
+            .searchstyle {
+                padding: 20px 20px 20px 0;
+            }
+            
+            #cssmenu nav {
+                display: none;
+            }
+            
+            .postinfo p {
+                font-size: 14px;
+                font-style: italic;
+                color: #000;
+            }
+            
+            .postinfo a {
+                text-decoration: none;
+                font-size: 15px;
+                font-style: italic;
+                color: #000;
+            }
+            
+            .postinfo a:hover {
+                color: #0a6f7a;
+                text-decoration: underline;
+            }
+            
+            .contentpadding {
+                padding: 20px 0 0;
+            }
+            
+            .csstag {
+                padding: 10px 0 15px;
+            }
+            
+            .videopost, 
+            .audiopost, 
+            .photopost, 
+            .chatpost,
+            .linkpost,
+            .quotepost,
+            .textpost {
+                padding: 20px 0;
+                border-bottom: 2px solid #000;
+            }
+            
+            .cssreadmore a {
+                color: #0a6f7a;
+            }
+            
+            .csspagination {
+                padding: 20px 0;
+                position: relative;
+                font-weight: bold;
+            }
+            
+            .paginationjump {
+                text-align: center;
+            }
+            
+            .paginationjump span {
+                padding: 10px;
+            }
+            
+            .paginationnext p {
+                text-align: right;
+            }
+            
+            .paginationprev a, .paginationjump a, .paginationjump #totalpages, .paginationnext a, .hamburgernav nav a {
+                text-decoration: none;
+                color: #0a6f7a;
+            }
+
+            .socialmedia a {
+                padding: 0 10px 0 0;
+            }
+            
+            footer {
+                font-size: 15px;
+                font-style: italic;
+                padding: 30px 0;
+                line-height: 1.5;
+                font-family: {font: Footer Font};
+            }
+
+            .hamburger {
+                display:block;
+                position:absolute;
+                top: 10px;
+                right: 0;
+            }
+            
+            .hamburgernav nav {
+                padding: 15px 0px 30px;
+            }
+            
+            .hamburgernav nav li {
+                padding: 15px 0;
+            }
+            
+            .hamburgernav ul li a:hover {
+                color: #000;
+            }
+
+            .hamburgernav {
+                display: none;
+            }
+
+
+            @media (min-width: 500px) {
+                #cssmenu nav {
+                    display: inherit;
+                    padding: 25px 0;
+                    font-family: {font: Nav Font};
+                }
+            
+                #cssmenu nav ul li a {
+                    text-decoration: none;
+                    font-weight: 400;
+                    line-height: 3;
+                    color: #000;
+                }
+            
+                #cssmenu ul li a:hover {
+                    color: #0a6f7a;
+                }
+                
+                .displaynone {
+                    display: none;
+                }
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <header>
+            
+                <div class="row">
+                    <div class="eight columns">
+                        <!--<div></div><center><img src="https://40.media.tumblr.com/4c0a4e85e7248c03b5e8ea1d10b8159b/tumblr_inline_o4mih9djtd1u1nxgs_500.jpg" width="1000"></center></div>-->
+                        <div class="searchstyle">
+                            <form action="/search" method="get">
+                                <input type="text" name="q" placeholder="Search" value="{SearchQuery}" />
+                                <input type="submit" value="Search"/>
+                            </form>
+                        </div><!--/.searchstyle-->
+                    </div><!--/.eight columns-->
+                    
+                    <div class="four columns">
+                        <div class="displaynone">
+                            <div class="hamburger">                        
+                                <a href="#" id="hamburger"><img src="https://36.media.tumblr.com/12fffdfdfefa5e0c286a4281cca35a11/tumblr_inline_o36xai1a9B1u1nxgs_500.png" alt="hamburger icon"></a>
+                            </div><!--/.hamburger--> 
+                            
+                            <div class="hamburgernav">
+                                <nav>
+                                    <ul>
+                                        <li><a href="/">Home</a></li>
+                                        {block:Pages}
+                                        <li><a href="{URL}">{Label}</a></li>
+                                        {/block:Pages}
+                                    </ul>
+                                </nav>
+                            </div><!--/.hamburgernav-->
+                            
+                        </div><!--/.displaynone-->
+                    </div><!--/.four columns-->
+                </div><!--/.row-->
+                
+                <div class="row">
+    
+                    <div class="twelve columns">
+                        
+                        <div class="socialmedia">
+                            {block:ifShowTwitter}
+                                <a>Twitter</a>
+                            {/block:ifShowTwitter}
+
+                            {block:ifShowInstagram}
+                                <a>Instagram</a>
+                            {/block:ifShowInstagram}
+                            
+                            {block:ifShowYoutube}
+                                <a>Youtube</a>
+                            {/block:ifShowYoutube}
+                            
+                            {block:ifShowFacebook}
+                                <a>Facebook</a>
+                            {/block:ifShowFacebook}
+                        </div><!--/.socialmedia-->
+                    </div><!--/.twelve columns-->
+                </div><!--/.row-->
+                        
+                <h1>{Title}</h1>
+                    
+                    {block:Description}
+                        <h2>{Description}</h2>
+                    {/block:Description}
+                
+            </header>
+            
+            <div class="row">
+                <div class="three columns" id="cssmenu">
+                    {Block:HasPages}
+                        <nav>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                {block:Pages}
+                                <li><a href="{URL}">{Label}</a></li>
+                                {/block:Pages}
+                            </ul>
+                        </nav>
+                    {/Block:HasPages}
+
+                </div><!--/.three columns #cssmenu-->
+
+                <div class="nine columns">
+
+                    {block:SearchPage}
+                        <h4>{SearchResultCount} results</h4>
+                    {/block:SearchPage}
+
+                    
+                    {block:Posts}
+                    
+                        <article>
+                            <div class="{PostType}post" id="{PostID}">
+                                <h4>Type of post: {PostType}</h4>
+                                    <div class="postinfo">
+                                        <p><a href="{Permalink}">Posted {Month}, {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></p>
+                                        <p>Author: {PostAuthorName}</p>
+                                    </div><!--/.postinfo-->
+                    
+
+                                {block:Title}
+                                    <h3>{Title}</h3>
+                                {/block:Title}
+
+                                {block:Text}
+                                    {Body}
+                                {/block:Text}
+
+                                
+                                {block:Photo}
+
+                                <figure>
+                                    <img src="{PhotoURL-400}">
+                                    <figcaption>
+                                    {block:Caption}
+                                        {Caption}
+                                    {/block:Caption}
+                                    </figcaption>
+                                </figure>
+
+                                {/block:Photo}
+
+                                
+                                {block:Link}
+                                    <div class="contentpadding">
+                                        <h3><a href="{URL}">{Name}</a></h3>
+                                        {block:Thumbnail}
+                                            <img src="{Thumbnail}">
+                                        {/block:Thumbnail}
+    
+                                        {block:Description}
+                                            <p>{Description}</p>
+                                        {/block:Description}
+                                    </div><!--/.contentpadding-->
+                                {/block:Link}
+
+                                
+                                {block:Quote}
+                                    <div class="contentpadding quotepadding">
+                                        <p>"{Quote}"</p>
+                                        {block:Source}
+                                            <p>{Source}</p>
+                                        {/block:Source}
+                                    </div><!--/.contentpadding-->
+                                {/block:Quote}
+
+                                
+                                {block:Audio}
+                                    <div class="contentpadding">
+                                        {block:AudioEmbed}
+                                                {AudioEmbed}
+                                        {/block:AudioEmbed}
+                                        {block:Caption}
+                                            <p>{Caption}</p>
+                                        {/block:Caption}
+                                    </div><!--/.contentpadding-->
+                                {/block:Audio}
+
+                                
+                                {block:Video}
+                                    <div class="contentpadding">
+                                        {Video-500}
+                                        {block:Caption}
+                                            <p>{Caption}</p>
+                                        {/block:Caption}
+                                    </div><!--/.contentpadding-->
+                                {/block:Video}
+
+                                
+                                {block:Chat}
+                                    <div class="contentpadding">
+                                        {block:Lines}
+                                            {block:Label}
+                                                <b>{Label}</b>
+                                            {/block:Label}
+                                            <p>{Line}</p><br>
+                                        {/block:Lines}
+                                    </div><!--/.contentpadding-->
+                                {/block:Chat}
+
+                                
+                                {block:PermalinkPage}
+                                    <a href="Permalink"></a>
+                                {/block:PermalinkPage}
+
+                                
+                                {block:More}
+                                    <p class="cssreadmore"><a href="{Permalink}">Read More</a></p>
+                                {/block:More}
+
+                                
+                                {block:HasTags}
+                                    <div class="csstag postinfo">
+                                        {block:Tags}
+                                            <p><a href="{TagURL}">#{Tag}</a></p>
+                                           
+                                        {/block:Tags}
+                                    </div><!--/.csstag-->
+                                {/block:HasTags}
+
+                            </div><!--/.post-->
+                        </article>
+                    {/block:Posts}
+                </div><!--/.nine columns-->
+            </div><!--/.row-->
+
+            
+            <div class="row csspagination">
+                {block:Pagination}
+
+                    <div class="three columns paginationprev">
+                        {block:PreviousPage}
+                            <p><a href="{PreviousPage}">Previous</a></p>
+                        {/block:PreviousPage}
+                    </div><!--/.three columns-->
+
+                    <div class="six columns paginationjump">
+                        {block:JumpPagination length="5"}
+                        
+                            {block:CurrentPage}
+                                <span>{PageNumber}</span>
+                            {/block:CurrentPage}
+                        
+                            {block:JumpPage}
+                                <span><a href="{URL}">{PageNumber}</a></span>
+                            {/block:JumpPage}
+                        
+                        {/block:JumpPagination}
+                        
+                            <span id="totalpages">({CurrentPage}/{TotalPages})</span>
+                    </div><!--/.six columns-->
+
+                    <div class="three columns paginationnext">
+                        {block:NextPage}
+                            <p><a href="{NextPage}">Next</a></p>
+                        {/block:NextPage}
+                    </div><!--/.three columns-->
+
+                {/block:Pagination}
+            </div><!--/.row-->
+
+            
+            <div class="row">
+                <div class="twelve columns">
+
+                <footer>
+                    <span>Copyright &copy; Gaminggeeks {CopyrightYears}<br>{Title}</span>
+                </footer>
+
+                </div><!--/.twelve columns-->
+            </div><!--/.row-->
+
+        </div><!--/.container-->
+    </body>
+</html>
