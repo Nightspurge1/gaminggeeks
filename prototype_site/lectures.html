@@ -1,7 +1,9 @@
-<DOCOTYPE! html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (min-width: 360px)">
     <title>Comp 1950 - Home</title>
     <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
 	<script>
@@ -41,7 +43,7 @@
 		      <li><a href="blank">Project</a></li>
 		      <li><a href="http://thenetnews.tumblr.com/">News</a></li>
 	       </ul>
-        <nav>
+        </nav>
     </div><!-- /.row Nav -->
             
 <div class="row">
@@ -85,19 +87,48 @@
         <ul>
             <li>Validate your code! Web Dev Tool is useful for a quick scan, but always validate your code!</li>
             <li>Use a <a href="blank">referer link</a></li>
-            <li>The URL contains a <i>query string</i> which instructs the server to look at ther <i>referer</i> for the validation.</li>
+            <li>The URL contains a <em>query string</em> which instructs the server to look at ther <em>referer</em> for the validation.</li>
             <li>This link can now be used anywhere. No page customization needed.</li>
         </ul>
     <p class="lecture_2">Hide</p>
     </div><!-- /#lecture_2 -->
+    <h2 class="lecture_3">Lecture 3</h2>
+    <div id="lecture_3">
+        <h3>Agenda</h3>
+        <ul>
+            <li>One HTML, Many CSS</li>
+            <li>Print Stylesheets</li>
+            <li>Responsive</li>
+            <li>Homework</li>
+        </ul>
+        <h3>One HTML, Many CSS</h3>
+        <p>I have mentioned many times in class: Separate your Content from your Presentation. One of the main reasons for this is the ability to apply different styles to your content.</p>
+        <p>There are many reasons to do this, but the primary ones are:</p>
+        <ul>
+            <li>You can use different presentation options (CSS) on the same content (HTML)</li>
+            <li>You can target different platforms (devices) in different ways</li>
+        </ul>
+        <h4>Alternate sheets</h4>
+        <ul>
+            <li>To specify an alternate stylesheet, use: rel="alternate stylesheet" within the link element:</li>
+        </ul>
+        <p><link rel="alternate stylesheet" href="styles.css" media="screen" title="Main Styles"></p>
+        <em>Tip: If you have multiple sheets that belong to one "look" make sure they all have the same title name</em>
+        <ul>
+            <li>An example would be to create a ‘Larger Text’ style sheet with everything in a larger font, or an alternate sheet for a special event</li>
+            <li>Made famous by <a href="http://www.csszengarden.com/">CSS Zen Garden</a></li>
+        </ul>
+    <p class="lecture_3">Hide</p>
+    </div><!-- /#lecture -->
 </main>
 </div><!-- /.row Main -->
             
 <div class="row">
 <footer class="twelve columns"> 
 	<ul>
-		<li><a href="sitemap.html">Sitemap</a></li>
+		<li><a href="../sitemap.html">Sitemap</a></li>
 		<li><a href="bcit.ca">BCIT</a></li>
+        <li><a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML5 Valid</a></li>
 	</ul>
 </footer>
 </div><!-- /.row Footer --> 
