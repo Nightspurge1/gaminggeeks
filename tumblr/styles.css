@@ -1,0 +1,469 @@
+     /* 
+            html5doctor.com Reset Stylesheet
+            v1.6.1
+            Last Updated: 2010-09-17
+            Author: Richard Clark - http://richclarkdesign.com 
+            Twitter: @rich_clark
+            */
+
+            html, body, div, span, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            abbr, address, cite, code,
+            del, dfn, em, img, ins, kbd, q, samp,
+            small, strong, sub, sup, var,
+            b, i,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section, summary,
+            time, mark, audio, video {
+                margin:0;
+                padding:0;
+                border:0;
+                outline:0;
+                font-size:100%;
+                vertical-align:baseline;
+                background:transparent;
+            }
+
+            body {
+                line-height:1;
+            }
+
+            article,aside,details,figcaption,figure,
+            footer,header,hgroup,menu,nav,section { 
+                display:block;
+            }
+
+            nav ul {
+                list-style:none;
+            }
+
+            blockquote, q {
+                quotes:none;
+            }
+
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content:'';
+                content:none;
+            }
+
+            a {
+                margin:0;
+                padding:0;
+                font-size:100%;
+                vertical-align:baseline;
+                background:transparent;
+            }
+
+            /* change colours to suit your needs */
+            ins {
+                background-color:#ff9;
+                color:#000;
+                text-decoration:none;
+            }
+
+            /* change colours to suit your needs */
+            mark {
+                background-color:#ff9;
+                color:#000; 
+                font-style:italic;
+                font-weight:bold;
+            }
+
+            del {
+                text-decoration: line-through;
+            }
+
+            abbr[title], dfn[title] {
+                border-bottom:1px dotted;
+                cursor:help;
+            }
+
+            table {
+                border-collapse:collapse;
+                border-spacing:0;
+            }
+
+            /* change border colour to suit your needs */
+            hr {
+                display:block;
+                height:1px;
+                border:0;   
+                border-top:1px solid #cccccc;
+                margin:1em 0;
+                padding:0;
+            }
+
+            input, select {
+                vertical-align:middle;
+            }
+            
+            
+
+     /*
+            * 
+            * Basic Grid for COMP 1950
+            * By Alistair Calder
+            * 
+            * Adapted from Skeleton V2.0.4
+            * Copyright 2014, Dave Gamache
+            * www.getskeleton.com
+            * 
+            */
+
+
+
+            /* Grid - Starts with Mobile-First */
+            .container {
+              position: relative;
+              width: 100%;
+              max-width: 960px;
+              margin: 0 auto;
+              padding: 20px;
+              box-sizing: border-box; }
+
+            .column,
+            .columns {
+              width: 100%;
+              float: left;
+              box-sizing: border-box; }
+
+            /* For devices larger than 400px */
+            @media (min-width: 400px) {
+              .container {
+                width: 85%;
+                padding: 0; }
+            }
+
+            /* For devices larger than 550px */
+            @media (min-width: 550px) {
+              .container {
+                width: 80%; }
+              .column,
+              .columns {
+                margin-left: 4%; }
+              .column:first-child,
+              .columns:first-child {
+                margin-left: 0; }
+
+              .one.column,
+              .one.columns                    { width: 4.66666666667%; }
+              .two.columns                    { width: 13.3333333333%; }
+              .three.columns                  { width: 22%;            }
+              .four.columns                   { width: 30.6666666667%; }
+              .five.columns                   { width: 39.3333333333%; }
+              .six.columns                    { width: 48%;            }
+              .seven.columns                  { width: 56.6666666667%; }
+              .eight.columns                  { width: 65.3333333333%; }
+              .nine.columns                   { width: 74.0%;          }
+              .ten.columns                    { width: 82.6666666667%; }
+              .eleven.columns                 { width: 91.3333333333%; }
+              .twelve.columns                 { width: 100%; margin-left: 0; }
+
+              .one-third.column               { width: 30.6666666667%; }
+              .two-thirds.column              { width: 65.3333333333%; }
+
+              .one-half.column                { width: 48%; }
+
+            }
+
+            /* Base Styles  */
+            /* NOTE
+            html is set to 62.5% so that all the REM measurements 
+            are based on 10px sizing. So basically 1.5rem = 15px :) */
+            /*
+            html {
+              font-size: 62.5%; }
+            */
+            /*
+            body {
+              font-size: 1.5em;  currently ems cause chrome bug misinterpreting rems on body element 
+              line-height: 1.6;
+              font-weight: 400;
+              font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+              color: #222; }
+            */
+
+            p {
+              margin-top: 0; }
+
+
+
+            /* Lists  */
+            ul {
+              list-style: circle inside; }
+            ol {
+              list-style: decimal inside; }
+            ol, ul {
+              padding-left: 0;
+              margin-top: 0; }
+            ul ul,
+            ul ol,
+            ol ol,
+            ol ul {
+              margin: 1.5rem 0 1.5rem 3rem;
+              font-size: 90%; }
+            /*
+            li {
+              margin-bottom: 1rem; }
+            */
+
+
+
+            /* Tables  */
+            th,
+            td {
+              padding: 12px 15px;
+              text-align: left;
+              border-bottom: 1px solid #E1E1E1; }
+            th:first-child,
+            td:first-child {
+              padding-left: 0; }
+            th:last-child,
+            td:last-child {
+              padding-right: 0; }
+
+
+
+
+            /* Utilities  */
+            .u-full-width {
+              width: 100%;
+              box-sizing: border-box; }
+            .u-max-full-width {
+              max-width: 100%;
+              box-sizing: border-box; }
+            .u-pull-right {
+              float: right; }
+            .u-pull-left {
+              float: left; }
+
+
+            /* Clearing  */
+
+            /* Self Clearing Goodness */
+            .container:after,
+            .row:after,
+            .u-cf {
+              content: "";
+              display: table;
+              clear: both; }
+
+
+            /* Media Queries  */
+            /*
+            Note: The best way to structure the use of media queries is to create the queries
+            near the relevant code. For example, if you wanted to change the styles for buttons
+            on small devices, paste the mobile query code up in the buttons section and style it
+            there.
+            */
+
+
+            /* Larger than mobile */
+            @media (min-width: 400px) {}
+
+            /* Larger than phablet (also point when grid becomes active) */
+            @media (min-width: 550px) {}
+
+            /* Larger than tablet */
+            @media (min-width: 750px) {}
+
+            /* Larger than desktop */
+            @media (min-width: 1000px) {}
+
+            /* Larger than Desktop HD */
+            @media (min-width: 1200px) {}
+
+            .wrapper {
+                widht:90%;
+                max-width: 960px;
+                margin: 0 auto;
+            }
+
+            body {
+                font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size:16px;
+                padding: 20px;
+                color: #000;
+                font-family: {font: Main Font};
+                background-color: {color: Background};
+                color: {color: Body Color};
+            }
+            
+            h1 {
+                font-family: Gabriela, Georgia, sans-serif;
+                font-size: 32px;
+                padding: 40px 0;
+                line-height:1.4;
+                border-bottom: 2px solid #000;
+                color: #0a6f7a;
+                color: {color: h1 Color};
+            }
+            
+            h2 {
+                font-family: 'Maven Pro', Georgia, sans-serif;
+                font-size: 20px;
+                padding: 20px 0;
+                line-height: 1.4;
+                color: #0a6f7a;
+                color: {color: h2 Color};
+            }
+        
+            h3 {
+                font-size: 18px;
+                padding: 20px 0;
+                color: #0a6f7a;
+                line-height: 1.3;
+                color: {color: h3 Color};
+            }
+            
+            h4 {
+                font-family: Gabriela, Georgia, sans-serif;
+                font-size: 17px;
+                padding: 10px 0;
+                line-height: 1.3;
+                padding: 15px 0;
+                color: #0a6f7a;
+                color: {color: h4 Color};
+            }
+        
+            p {
+                font-size: 17px;
+                line-height: 1.5;
+            }
+            
+            img {
+                max-width: 100%;
+            }
+            
+            .searchstyle {
+                padding: 20px 20px 20px 0;
+            }
+            
+            #cssmenu nav {
+                display: none;
+            }
+            
+            .postinfo p {
+                font-size: 14px;
+                font-style: italic;
+                color: #000;
+            }
+            
+            .postinfo a {
+                text-decoration: none;
+                font-size: 15px;
+                font-style: italic;
+                color: #000;
+            }
+            
+            .postinfo a:hover {
+                color: #0a6f7a;
+                text-decoration: underline;
+            }
+            
+            .csstag {
+                padding: 10px 0 15px;
+            }
+            
+            .videopost, 
+            .audiopost, 
+            .photopost, 
+            .chatpost,
+            .linkpost,
+            .quotepost,
+            .textpost {
+                padding: 20px 0;
+                border-bottom: 2px solid #000;
+            }
+            
+            .cssreadmore a {
+                color: #0a6f7a;
+            }
+            
+            .csspagination {
+                padding: 20px 0;
+                position: relative;
+                font-weight: bold;
+            }
+            
+            .paginationjump {
+                text-align: center;
+            }
+            
+            .paginationjump span {
+                padding: 10px;
+            }
+            
+            .paginationnext p {
+                text-align: right;
+            }
+            
+            .paginationprev a, .paginationjump a, .paginationjump #totalpages, .paginationnext a, .hamburgernav nav a {
+                text-decoration: none;
+                color: #0a6f7a;
+            }
+
+            .socialmedia a {
+                padding: 0 10px 0 0;
+            }
+            
+            footer {
+                font-size: 0.875em;
+                font-style: italic;
+                padding: 30px 10px;
+                line-height: 1.5;
+                font-family: {font: Footer Font};
+                background-color: #85c3d0;
+            }
+
+            .hamburger {
+                display:block;
+                position:absolute;
+                top: 10px;
+                right: 0;
+            }
+            
+            .hamburgernav nav {
+                padding: 15px 0px 30px;
+            }
+            
+            .hamburgernav nav li {
+                padding: 15px 0;
+            }
+            
+            .hamburgernav ul li a:hover {
+                color: #000;
+            }
+
+            .hamburgernav {
+                display: none;
+            }
+
+
+            @media (min-width: 500px) {
+                #cssmenu nav {
+                    display: inherit;
+                    padding: 25px 0;
+                    font-family: {font: Nav Font};
+                }
+            
+                #cssmenu nav ul li a {
+                    text-decoration: none;
+                    font-weight: 400;
+                    line-height: 3;
+                    color: #000;
+                }
+            
+                #cssmenu ul li a:hover {
+                    color: #0a6f7a;
+                }
+                
+                .displaynone {
+                    display: none;
+                }
+                
+            }
