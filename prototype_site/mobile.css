@@ -95,8 +95,9 @@ img {
 }
 
 footer {
+    background-color: #85c3d0;
     height: 50px;
-    color: #ffffff;
+    color: #173042;
     font-style: italic;
     font-size: 0.875em;
     text-align: left;
@@ -107,11 +108,12 @@ footer a {
     text-align: left;
     padding: 5px;
     display: block;
-    color: #fff;
+    color: #173042;
 }
 
 footer ul{
     display: inline;
+    list-style-type: none;
 }
 
 nav ul, #lecture_1, #lecture_2, #lecture_3 {
