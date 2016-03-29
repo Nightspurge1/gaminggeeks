@@ -15,3 +15,7 @@ footer ul a{
 a {
     color: black;
 }
+
+#lecture_1, #lecture_2, #lecture_3{
+    display: inline;
+}
