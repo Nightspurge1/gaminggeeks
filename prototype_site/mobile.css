@@ -20,6 +20,10 @@ body {
     line-height: 1.5;
 }
 
+nav ul, #lecture_1, #lecture_2, #lecture_3 {
+    display: none;
+}
+
 a{
     text-decoration: none;
 }
@@ -144,6 +148,4 @@ footer ul li{
     list-style-type: none;
 }
 
-nav ul, #lecture_1, #lecture_2, #lecture_3 {
-    display: none;
-}
+
