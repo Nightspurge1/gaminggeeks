@@ -69,7 +69,7 @@ h4 {
 }
 
 h2 {
-    font-family: 'Maven Pro', Georgia, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 20px 0 0 10px;
 }
 
@@ -85,6 +85,14 @@ p {
 
 section{
     padding-top: 15px;
+}
+
+#Lectures h2{
+    text-align: center;
+    background-color: #eef8fa;
+    border-collapse: collapse;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 
