@@ -21,8 +21,14 @@ body {
 
 a{
     text-decoration: none;
-    
 }
+
+#Burger{
+    position: fixed;
+    margin-top:0;
+    margin-right:0;
+}
+
 
 nav {
     float: left;
@@ -51,6 +57,8 @@ nav a:link {
 nav a:hover, nav a:active {
     color: #0E748C;  
 }
+
+
 
 h1 { 
     font-family: Gabriela, Georgia, sans-serif;
@@ -93,6 +101,17 @@ section{
     border-collapse: collapse;
     margin: 5px;
     border-radius: 5px;
+}
+
+#Burger{
+   position: fixed;
+    top: 10px;
+    left: 10px;
+    
+}
+#hamburger{
+    height: 100px;
+    width: 100px;
 }
 
 
