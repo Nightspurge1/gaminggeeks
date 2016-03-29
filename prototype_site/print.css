@@ -1,0 +1,21 @@
+body{
+    color: black;
+    background-image: none;
+    background-color: white;
+}
+
+nav{
+    display: none;
+}
+
+footer ul a{
+    display: none;
+}
+
+a {
+    color: black;
+}
+
+#lecture_1, #lecture_2, #lecture_3{
+    display: inline;
+}
