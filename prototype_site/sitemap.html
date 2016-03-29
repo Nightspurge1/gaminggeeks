@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (min-width: 360px)">
+    <link rel="stylesheet" href="print.css" media="print">
+    <title>Comp 1950 - Home</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#hamburger").click(function(){
+				$("nav ul").toggle(1000);
+			});
+            $(".lecture_1").click(function(){
+                $("#lecture_1").toggle(1000);
+            });
+            $(".lecture_2").click(function(){
+                $("#lecture_2").toggle(1000);
+            });
+            $(".lecture_3").click(function(){
+                $("#lecture_3").toggle(1000);
+            });
+		});
+	
+	</script>
+</head>
+    <body class="container">
+    <div id="Burger" class="row">  
+        <nav class="five columns">
+            <div id="hamburger"><img src="images/menu.png" alt="menu" id="menu"></div>
+	       <ul>
+		      <li><a href="index.html">Home</a></li>
+		      <li><a href="#">About</a></li>
+		      <li><a href="#">Outline</a></li>
+		      <li><a href="#">Student Page</a></li>
+		      <li><a href="lectures.html">Lectures</a></li>
+		      <li><a href="#">Project</a></li>
+		      <li><a href="http://thenetnews.tumblr.com/" target="_blank">News</a></li>
+	       </ul>
+        </nav>
+    </div><!-- /.row Nav -->
+        
+   
+    <div class="row">
+        
+        <header id="header" class="twelve columns">
+           <h1><a href="index.html">Comp1950</a></h1>
+        </header>
+        </div><!-- /.row Header --> 
+        
+<div class="row" >
+<main class="twelve columns">
+    <h4>Site Map</h4>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Outline</a></li>
+        <li><a href="#">Student Page</a></li>
+        <li><a href="lectures.html">Lectures</a></li>
+            <ul>
+                <li><a href="lectures.html">Week 1</a></li>
+                <li><a href="lectures.html">Week 2</a></li>
+                <li><a href="lectures.html">Week 3</a></li>
+            </ul>
+        <li><a href="#">Project</a></li>
+            <ul>
+                <li><a href="#">Project Answers</a></li>
+            </ul>
+        <li><a href="http://thenetnews.tumblr.com/" target="_blank">News</a></li>
+    </ul>
+</main>
+</div><!-- /.row Main -->
+            
+<div class="row">
+<footer class="twelve columns"> 
+	<ul>
+        
+		<li><a href="sitemap.html">Sitemap</a></li>
+		<li><a href="http://www.bcit.ca" target="_blank">BCIT</a></li>
+        <li><a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML5 Valid</a></li>
+	</ul>
+</footer>
+</div><!-- /.row Footer --> 
+</body>
+</html>

@@ -1,6 +1,7 @@
 
 #header { 
-    background-image: url("images/header_background.png");
+    background-image: url("images/header_background_with_logo.png");
+    height: 300px;
     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: right;
     text-shadow: 1px 1px #1d2730;
