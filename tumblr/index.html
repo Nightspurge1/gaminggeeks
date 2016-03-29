@@ -21,7 +21,7 @@
         <meta name="text:Facebook Handle" description=""/>
         <meta name="if:Show Facebook" description="0"/>
         
-        <link rel="stylesheet" href="http://static.tumblr.com/9iq5c5u/IFlo4se10/styles.css" media="all">
+        <link rel="stylesheet" href="http://static.tumblr.com/9iq5c5u/2MTo4slf6/styles.css" media="all">
         
         <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
         <script>
@@ -127,13 +127,20 @@
                     {block:Posts}
                     
                         <article>
-                            <div class="{PostType}post" id="{PostID}">
+                            <div class="{PostType}post">
                                 <div class="postinfo">
-                                    <p><a href="{Permalink}">Posted {Month}, {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></p>
-                                    <p>Author: {PostAuthorName}</p>
+                                    <div class="row">
+                                        <div class="six columns">
+                                            <p>Author: {PostAuthorName}</p>
+                                        </div><!--/.six columns-->
+                                        
+                                        <div class="six columns">
+                                            <p style="float:right"><a href="{Permalink}">Posted {Month}, {DayOfMonth}{DayOfMonthSuffix}, {Year}</a></p>
+                                        </div><!--/.six columns-->
+                                    </div><!--/.row-->
                                 </div><!--/.postinfo-->
+                                
                     
-
                                 {block:Title}
                                     <h3>{Title}</h3>
                                 {/block:Title}
@@ -216,8 +223,7 @@
                                 {block:HasTags}
                                     <div class="csstag postinfo">
                                         {block:Tags}
-                                            <p><a href="{TagURL}">#{Tag}</a></p>
-                                           
+                                            <a href="{TagURL}">#{Tag}</a>
                                         {/block:Tags}
                                     </div><!--/.csstag-->
                                 {/block:HasTags}

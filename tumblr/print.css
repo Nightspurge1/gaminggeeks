@@ -1,0 +1,45 @@
+nav, #cssmenu nav, footer, img, h1, .searchstyle, .socialmedia {
+    display: none;
+}
+
+body {
+    color: #000;
+    background: #fff;
+    font: 13pt Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 17pt;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 15pt;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 14pt;
+    margin-top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  page-break-after:avoid;
+  page-break-inside:avoid
+}
+
+header:before {
+   display: block;
+   content: "Thank you for visiting my website!";
+   margin-bottom: 15px;
+   padding: 5px 8px;
+   font-style: italic;
+}
