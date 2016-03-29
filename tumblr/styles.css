@@ -1,4 +1,4 @@
-     /* 
+ /* 
             html5doctor.com Reset Stylesheet
             v1.6.1
             Last Updated: 2010-09-17
@@ -296,9 +296,8 @@
             h1 {
                 font-family: Gabriela, Georgia, sans-serif;
                 font-size: 32px;
-                padding: 40px 0;
+                padding: 40px 0 10px;
                 line-height:1.4;
-                border-bottom: 2px solid #000;
                 color: #0a6f7a;
                 color: {color: h1 Color};
             }
@@ -377,7 +376,7 @@
             .quotepost,
             .textpost {
                 padding: 20px 0;
-                border-bottom: 2px solid #000;
+                border-bottom: 1px solid #000;
             }
             
             .cssreadmore a {
@@ -460,6 +459,15 @@
             
                 #cssmenu ul li a:hover {
                     color: #0a6f7a;
+                }
+                
+                #cssmenu nav li {
+                    display: inline;
+                    padding: 30px;
+                }
+                
+                .paddingdescrip {
+                    border-bottom: 2px solid #000;
                 }
                 
                 .displaynone {

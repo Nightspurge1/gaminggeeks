@@ -16,14 +16,12 @@
         
         <meta name="text:Twitter Handle" description=""/>
         <meta name="if: Show Twitter" description="0">
-        <meta name="text:Instagram Handle" description=""/>
-        <meta name="if: Show Instagram" description="0">
         <meta name="text:Youtube Handle" description=""/>
-        <meta name="if:Show Youtube" description"0"/>
+        <meta name="if:Show Youtube" description="0"/>
         <meta name="text:Facebook Handle" description=""/>
-        <meta name="if:Show Facebook" description"0"/>
+        <meta name="if:Show Facebook" description="0"/>
         
-        <link rel="stylesheet" href="http://static.tumblr.com/9iq5c5u/gw0o4rq9l/styles.css" media="all">
+        <link rel="stylesheet" href="http://static.tumblr.com/9iq5c5u/IFlo4se10/styles.css" media="all">
         
         <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
         <script>
@@ -80,19 +78,15 @@
                         
                         <div class="socialmedia">
                             {block:ifShowTwitter}
-                                <a>Twitter</a>
+                                <a><img src="https://41.media.tumblr.com/8c041e5ca9ac2fd63e6f7cb5da7e43c8/tumblr_inline_o4sdjxHruC1u46wxo_500.png" /></a>
                             {/block:ifShowTwitter}
-
-                            {block:ifShowInstagram}
-                                <a>Instagram</a>
-                            {/block:ifShowInstagram}
                             
                             {block:ifShowYoutube}
-                                <a>Youtube</a>
+                                <a><img src="https://40.media.tumblr.com/df4f750e36f76784241c2f393bf55f99/tumblr_inline_o4sdiiQPYx1u46wxo_500.png" /></a>
                             {/block:ifShowYoutube}
                             
                             {block:ifShowFacebook}
-                                <a>Facebook</a>
+                                <a><img src="https://40.media.tumblr.com/d3ab1c520a73a2d2d34ad629aacd46d4/tumblr_inline_o4sdgtiJmJ1u46wxo_500.png" /></a>
                             {/block:ifShowFacebook}
                         </div><!--/.socialmedia-->
                     </div><!--/.twelve columns-->
@@ -100,14 +94,16 @@
                         
                 <h1>{Title}</h1>
                     
-                    {block:Description}
-                        <h2>{Description}</h2>
-                    {/block:Description}
+                    <div class="paddingdescrip">
+                        {block:Description}
+                            <h2>{Description}</h2>
+                        {/block:Description}
+                    </div><!--/.paddingdescrip-->
                 
             </header>
             
             <div class="row">
-                <div class="three columns" id="cssmenu">
+                <div class="twelve columns" id="cssmenu">
                     {Block:HasPages}
                         <nav>
                             <ul>
@@ -119,9 +115,9 @@
                         </nav>
                     {/Block:HasPages}
 
-                </div><!--/.three columns #cssmenu-->
+                </div><!--/.twelve columns #cssmenu-->
 
-                <div class="nine columns">
+                <div class="twelve columns">
 
                     {block:SearchPage}
                         <h4>{SearchResultCount} results</h4>
@@ -229,7 +225,7 @@
                             </div><!--/.post-->
                         </article>
                     {/block:Posts}
-                </div><!--/.nine columns-->
+                </div><!--/.twelve columns-->
             </div><!--/.row-->
 
             
