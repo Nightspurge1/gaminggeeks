@@ -100,18 +100,18 @@ footer {
     color: #173042;
     font-style: italic;
     font-size: 0.875em;
-    text-align: left;
+    text-align: right;
     padding:5px;
 }
 
 footer a {
     text-align: left;
     padding: 5px;
-    display: block;
+    display: inline;
     color: #173042;
 }
 
-footer ul{
+footer ul li{
     display: inline;
     list-style-type: none;
 }
